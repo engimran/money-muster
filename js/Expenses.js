@@ -28,7 +28,7 @@ function balance() {
 }
 document.getElementById('main-button').addEventListener('click', function () {
 
-    alert('calculate')
+    alert('Do you want to calculate')
     // total expenses
 
     const priviousExpenses = document.getElementById('total-expenses')
@@ -56,5 +56,7 @@ document.getElementById('save-button').addEventListener('click', function () {
     const remainingBalance = document.getElementById('remaining-balance')
     const totalRemainingBalance = balanceTotal - savingsAmountPer;
     remainingBalance.innerText = totalRemainingBalance;
+
+    alert('Save Successfully')
 
 })
