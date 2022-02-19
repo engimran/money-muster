@@ -13,21 +13,21 @@
 
 <body>
     <header>
-        <h1>My Savings</h1>
+        <h1 class="text-center m-3 font-weight-bold">Savings Amount</h1>
     </header>
     <main>
         <div class="row">
             <div class="col-sm-6">
                 <div class="card">
-                    <div class="card-body">
-                        <img class="w-100" src="images/income.jpg" alt="">
+                    <div class="">
+                        <img class="w-100 height-img" src="images/income.jpg" alt="">
 
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
+                <div class="card w-76">
+                    <div class="card-body card-bg">
                         <h5>Income</h5>
                         <div>
                             <div class="form-group row">
@@ -40,23 +40,23 @@
                             <div class="form-group row">
                                 <label for="inputtext" class="col-sm-2 col-form-label">Food :</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control w-50" id="total-food">
+                                    <input type="number" class="form-control w-50" id="total-food">
                                 </div>
                             </div>
-                            <div class="form-group row">
+                            <div class="form-group row mt-2">
                                 <label for="inputtext" class="col-sm-2 col-form-label">Rent :</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control w-50" id="total-rent">
+                                    <input type="number" class="form-control w-50" id="total-rent">
                                 </div>
                             </div>
-                            <div class="form-group row">
+                            <div class="form-group row mt-2">
                                 <label for="inputtext" class="col-sm-2 col-form-label">Clothes :</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control w-50" id="total-clothes">
+                                    <input type="number" class="form-control w-50" id="total-clothes">
                                 </div>
                             </div>
                             <div>
-                                <button class="btn btn-primary" id="main-button">Calculate</button>
+                                <button class="btn btn-primary m-2" id="main-button">Calculate</button>
                                 <h5>Total Expenses: <span id="total-expenses"></span></h5>
                                 <h5>Balance: <span id="total-Balance"></span></h5>
 
@@ -64,7 +64,7 @@
                             <div class="form-group row">
                                 <label for="inputtext" class="col-sm-2 col-form-label">Save:</label>
                                 <div class="col-sm-10 save-inline">
-                                    <input type="text" class="form-control w-50" id="savings-per"> %
+                                    <input type="number" class="form-control w-50" id="savings-per"> %
                                     <button id="save-button" class="btn btn-primary">Save</button>
                                 </div>
                                 <div>

@@ -1,6 +1,12 @@
 .card-body{
     background-color: white;
 }
+.card-bg{
+    background-color: antiquewhite;
+}
+.height-img{
+    height: 420px;
+}
 .save-inline{
     display: flex;
     

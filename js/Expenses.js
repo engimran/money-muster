@@ -4,10 +4,6 @@ const clothesInput = document.getElementById('total-clothes');
 function totalExpenses() {
     if (foodInput.value == '') {
         foodInput.value = 0;
-        if (foodInput.value == 'string') {
-            alert('invalid')
-
-        }
     }
     if (rentInput.value == '') {
         rentInput.value = 0;
@@ -26,13 +22,13 @@ function totalExpenses() {
 function balance() {
     const incomeTotal = document.getElementById('total-income');
     const balance = parseFloat(incomeTotal.value) - parseFloat(totalExpenses());
-
     const balanceTotal = document.getElementById('total-Balance');
     balanceTotal.innerText = balance;
 
 }
 document.getElementById('main-button').addEventListener('click', function () {
 
+    alert('calculate')
     // total expenses
 
     const priviousExpenses = document.getElementById('total-expenses')
